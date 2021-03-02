@@ -25,6 +25,15 @@
       "npm run lint"
     ]
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sompnd/ibm-mq-client-on-aws-fargate.git"
+  },
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/sompnd/ibm-mq-client-on-aws-fargate/issues"
+  },
+  "homepage": "https://github.com/sompnd/ibm-mq-client-on-aws-fargate#readme",
   "author": {
     "name": "sompnd",
     "url": "https://twitter.com/sompnd"
