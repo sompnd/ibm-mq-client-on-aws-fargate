@@ -1,0 +1,59 @@
+{
+  "name": "ibm-mq-client-on-aws-fargate",
+  "description": "IBM MQ client based on spring boot running on AWS fargate container cluster",
+  "version": "0.0.1",
+  "bin": {
+    "ibm-mq-client-on-aws-fargate": "src/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk",
+    "lint": "eslint . --ext .ts --fix",
+    "format": "prettier --config .prettierrc '**/*.ts' --write",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "npm run format",
+      "npm run lint"
+    ]
+  },
+  "author": {
+    "name": "sompnd",
+    "url": "https://twitter.com/sompnd"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "1.91.0",
+    "@types/jest": "26.0.20",
+    "@types/node": "10.17.52",
+    "@typescript-eslint/eslint-plugin": "4.15.1",
+    "@typescript-eslint/parser": "4.15.1",
+    "aws-cdk": "1.89.0",
+    "conventional-changelog-cli": "2.1.1",
+    "eslint": "7.20.0",
+    "eslint-config-prettier": "8.1.0",
+    "eslint-plugin-prettier": "3.3.1",
+    "husky": "4.3.8",
+    "jest": "26.6.3",
+    "lint-staged": "10.5.4",
+    "prettier": "2.2.1",
+    "ts-jest": "26.5.1",
+    "ts-node": "9.1.1",
+    "typescript": "4.2.2"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-ec2": "1.91.0",
+    "@aws-cdk/aws-ecr-assets": "1.91.0",
+    "@aws-cdk/aws-ecs": "1.91.0",
+    "@aws-cdk/aws-logs": "1.91.0",
+    "@aws-cdk/core": "1.91.0",
+    "source-map-support": "0.5.19"
+  }
+}

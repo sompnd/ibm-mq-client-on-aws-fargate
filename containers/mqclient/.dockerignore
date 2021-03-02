@@ -1,0 +1,16 @@
+*.log
+passwords.txt
+.git
+.cache
+*.md
+**/*.class
+target/
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
